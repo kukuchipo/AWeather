@@ -6,13 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/editTextZipcode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:hint="@string/enter_zipcode"
+        android:inputType="number"
+        android:minHeight="@dimen/zip_entry_min_size"
+        android:textAlignment="center"
+        android:textColorHint="#8D6E63"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_zipcode"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_text_height"
+        app:layout_constraintBottom_toTopOf="@+id/editTextZipcode"
+        app:layout_constraintEnd_toEndOf="@+id/editTextZipcode"
+        app:layout_constraintStart_toStartOf="@+id/editTextZipcode" />
+
+    <ImageView
+        android:id="@+id/imageViewLocationIcon"
+        android:layout_width="@dimen/zip_entry_location_icon"
+        android:layout_height="@dimen/zip_entry_location_icon"
+        android:src="@drawable/baseline_location_on_24"
+        android:text="@string/enter_zip"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTitle"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+        android:contentDescription="TODO" />
+
+    <Button
+        android:id="@+id/buttonSubmitZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_zipcode"
+        app:layout_constraintEnd_toEndOf="@+id/editTextZipcode"
+        app:layout_constraintStart_toStartOf="@+id/editTextZipcode"
+        app:layout_constraintTop_toBottomOf="@+id/editTextZipcode" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

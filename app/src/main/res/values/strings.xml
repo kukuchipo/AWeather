@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AWeather</string>
+    <string name="submit_zipcode">Submit Zipcode</string>
+    <string name="enter_zipcode">Zipcode</string>
+    <string name="enter_zip">Enter Zip</string>
+    <string name="enter_your_zipcode">Enter your zipcode</string>
+    <string name="zip_error">Please enter a valid zipcode</string>
 </resources>
