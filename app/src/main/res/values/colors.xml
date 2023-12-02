@@ -5,4 +5,6 @@
     <color name="myColorPrimary">#FFF59D</color>
     <color name="myColorPrimaryDark">#E6EE9C</color>
     <color name="myColorAccent">#A5D6A7</color>
+    <color name="forecast_item_background">#EFE9E9</color>
+
 </resources>
