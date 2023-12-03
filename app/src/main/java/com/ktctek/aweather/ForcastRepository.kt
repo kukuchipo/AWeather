@@ -22,7 +22,7 @@ class ForcastRepository {
         return when(temp) {
             in Float.MIN_VALUE.rangeTo(0f) -> "Anything below 0, doesn't make sense"
             in 0f.rangeTo(32f) -> "Way too cold."
-            in 32f.rangeTo(32f) -> "Colder than I would prefer."
+            in 32f.rangeTo(55f) -> "Colder than I would prefer."
             in 55f.rangeTo(65f) -> "Not too bad."
             in 65f.rangeTo(80f) -> "That's the sweetspot!"
             in 80f.rangeTo(90f) -> "Getting too warm!"
